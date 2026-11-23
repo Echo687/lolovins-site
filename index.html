@@ -26,7 +26,7 @@ body{background:#163531;color:#fdfcf9;font-family:'EB Garamond',Garamond,Georgia
 .fadeB{position:fixed;left:0;right:0;bottom:0;height:45%;background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.62))}
 .top{position:fixed;top:max(28px,env(safe-area-inset-top));left:0;right:0;display:flex;justify-content:center;opacity:0;animation:in .8s ease 3.3s both}
 .top .logo{width:84px;height:auto;filter:drop-shadow(0 1px 8px rgba(0,0,0,.25))}
-.bot{position:fixed;left:0;right:0;bottom:max(28px,env(safe-area-inset-bottom));padding:0 24px;text-align:center;text-shadow:0 1px 8px rgba(0,0,0,.35);opacity:0;animation:in .8s ease 3.6s both}
+.bot{position:fixed;left:0;right:0;bottom:max(28px,env(safe-area-inset-bottom));padding:0 24px;text-align:center;text-shadow:0 1px 8px rgba(0,0,0,.35);animation:rise .8s ease 3.6s both}
 .text{margin:0 auto;max-width:340px}
 h1{font-weight:400;text-transform:uppercase;letter-spacing:.08em;font-size:13px;margin-bottom:6px}
 p{font-size:16px;line-height:1.45;color:rgba(255,255,255,.92)}
@@ -37,6 +37,7 @@ a{display:inline-block;margin-top:12px;color:#fff;text-decoration:none;border-bo
 .splash .o2{animation:wink 1.6s ease-in-out 1.1s 1 both}
 .splash .smile{transform-origin:50% 0%;animation:grin 1.6s ease-in-out 1.1s 1 both}
 @keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes rise{from{transform:translateY(8px)}to{transform:none}}
 @keyframes out{to{opacity:0;visibility:hidden}}
 @keyframes wink{0%,6%,100%{transform:scaleY(1)}3%{transform:scaleY(.08)}}
 @keyframes grin{0%,8%,100%{transform:rotate(0) scaleX(1)}3%,5%{transform:rotate(-5deg) scaleX(1.05)}}
